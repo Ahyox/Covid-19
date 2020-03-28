@@ -1,0 +1,401 @@
+@font-face {
+    font-family: 'AvertaLight';
+    src: url('../fonts/AvertaLight.otf');
+}
+
+@font-face {
+    font-family: 'Averta';
+    src: url('../fonts/Averta.otf');
+}
+
+@font-face {
+    font-family: 'AvertaBold';
+    src: url('../fonts/AvertaBold.otf');
+}
+
+@font-face {
+    font-family: 'PrometoBold';
+    src: url('../fonts/PrometoBold.ttf');
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'AvertaLight', sans-serif !important;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.active {
+    color: #2fe !important;
+}
+
+.splasher {
+    background: url('../img/7ucwd-6E6Q99NCRZQ-Full-Image_GalleryBackground-en-US-1532979040390._SX1080_.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #000000d1;
+    z-index: 1;
+    margin: 0;
+    text-align: center;
+}
+
+.center-frame {
+    width: 80%;
+    margin: auto;
+    padding: 15px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    color: #FFFFFF;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+}
+
+.nav-fixing {
+    padding: 10px;
+}
+
+.nav-item a {
+    color: #FFFFFF;
+    font-family: 'Averta', sans-serif !important;
+}
+
+.big-head {
+    color: #FFFFFF;
+    font-family: 'PrometoBold', sans-serif !important;
+    text-shadow: 2px 2px 4px #c00;
+}
+
+.big-title {
+    color: #CC0000;
+    font-family: 'AvertaBold', sans-serif !important;
+    margin: 0px;
+}
+
+.text-wrapper {
+    margin: 0 auto;
+}
+
+.btn-red {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 30px;
+    background-color: #8a0303;
+}
+
+.deaths {
+    background: #c00;
+    color: #fff;
+}
+
+.confirmed {
+    background: #ffb60b;
+    color: #000;
+}
+
+.recovered {
+    background: #000;
+    color: #ffb60b;
+}
+#loading{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: none;
+    background: url("../img/loading.gif") 50% 50% no-repeat rgba(255, 255, 255, 0.8);
+}
+
+.navbar-toggler{
+    width: 47px;
+    height: 34px;
+    background-color: #c00;
+    border:none;
+}
+.navbar-toggler .line{
+    width: 100%;
+    float: left;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+
+/******* dialog *********/
+.vdialog{
+	border-radius:2px;
+	padding:20px 30px;
+	box-shadow:0 0 15px;
+	font-size:14px;
+	font-weight:bold;
+	width:500px;
+	margin:20px 250px 0 35px;
+	float:left;
+	z-index: 999;
+}
+.modal-input{
+	width:100%;
+	height:35px;
+	border:1px solid #999;
+	border-radius:3px;
+	padding:5px;
+	color: #1F1F1F;
+	font-weight: 200;
+}
+
+.close-img{
+	float: right;
+	margin-top: -35px;
+	margin-right: -45px;
+}
+
+
+
+.modalbutton{
+	background-color:#CC0000;
+	border:1px solid white;
+	font-family: 'Fauna One', serif;
+	font-Weight:bold;
+	font-size:18px;
+	color:white;
+	width:49%;
+	margin-left:24%;
+	border-radius:10px;
+	padding:10px;
+}
+
+#modal{
+	/**width:500px;**/
+	top: 10%;
+	width: 50%;
+	max-width: 500px;
+	min-width: 320px;
+	height: auto;
+	margin:0px;
+	background-color:white;
+	background:#000000;
+	background-size: cover;
+	font-family: 'Fauna One', serif;
+	position: fixed;
+	border: 5px solid rgb(255, 255, 255);
+	margin-left:-250px;
+	/*position:fixed;*/
+}
+
+#code {
+	color:#FFF;
+	font-size:15px;
+}
+
+.md-title {
+	text-align:center;
+	font-weight:500;
+	font-size:x-large;
+	color:#FFF;
+}
+
+#reportCaseDialog {
+	opacity:1.92;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	display: none;
+}
+
+@media (max-width: 1600px) {
+    #modal {
+          left: 50%;
+      }
+  }
+  @media (max-width: 1900px) {
+    #modal {
+          left: 50%;
+      }
+  }
+  
+  
+  @media (max-width:1366px){
+      #modal {
+          left: 50%;
+      }
+  }
+  @media (max-width:1280px){
+      #modal {
+          left: 50%;
+      }
+  }
+  @media (max-width:1024px){
+      #modal {
+          left: 55%;
+      }
+  }
+  @media (max-width:800px){
+      #modal {
+          left: 55%;
+      }
+  }
+  @media (max-width:768px){
+      #modal {
+          left: 65%;
+      }
+  }
+  
+  @media (max-width:640px){
+      #modal {
+          left: 65%;
+      }
+  }
+  
+  @media (max-width:480px){
+      #modal {
+          left: 70%;
+      }
+  }
+  
+  @media (max-width:320px){
+      #modal {
+          left: 70%;
+      }
+  }
+
+/********** end dialog ***********/
+
+/*********** Affected Location **************/
+#map {
+    height: 100%;
+}
+
+
+@media only screen and (max-width: 350px) {
+	.big-head {
+        font-size: 3em;
+    }
+
+    .big-title {
+        font-size: 2em;
+    }
+
+    .text-wrapper {
+        width: 100%;
+    }
+
+    .nav-fixing {
+        background: #c00;
+    }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .big-head {
+        font-size: 3em;
+    }
+
+    .big-title {
+        font-size: 2em;
+    }
+
+    .text-wrapper {
+        width: 100%;
+    }
+
+    .nav-fixing {
+        background: #c00;
+    }
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .big-head {
+        font-size: 4em;
+    }
+
+    .big-title {
+        font-size: 2em;
+    }
+
+    .text-wrapper {
+        width: 100%;
+    }
+
+    .nav-fixing {
+        background: #c00;
+    }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .big-head {
+        font-size: 4em;
+    }
+
+    .big-title {
+        font-size: 3em;
+    }
+
+    .text-wrapper {
+        width: 80%;
+    }
+
+    .nav-fixing {
+        background: rgba(204, 0, 0, 0);
+    }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .big-head {
+        font-size: 5em;
+    }
+
+    .big-title {
+        font-size: 3em;
+    }
+
+    .text-wrapper {
+        width: 60%;
+    }
+    .nav-fixing {
+        background: rgba(204, 0, 0, 0);
+    }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .big-head {
+        font-size: 5em;
+    }
+
+    .big-title {
+        font-size: 3em;
+    }
+
+    .text-wrapper {
+        width: 60%;
+    }
+
+    .nav-fixing {
+        background: rgba(204, 0, 0, 0);
+    }
+} 

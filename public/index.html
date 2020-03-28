@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome to Covid 19 Monitoring Tool</title>
+  <meta name="description" content="Real-time monitoring and reporting of the COVID-19 channel outbreak of coronavirus disease (COVID-19). This also helps you to know how close the virus is by local goverment"/>
+  <meta name="keywords" content="covid-19, coronavirus, corona, coro, virus, corona virus, sanitizer, ncdc" />
+
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/7.13.0/firebase-app.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script defer src="/__/firebase/7.13.0/firebase-auth.js"></script>
+  <script defer src="/__/firebase/7.13.0/firebase-database.js"></script>
+  <script defer src="/__/firebase/7.13.0/firebase-messaging.js"></script>
+  <script defer src="/__/firebase/7.13.0/firebase-storage.js"></script>
+  <!-- initialize the SDK after all desired features are loaded -->
+  <script defer src="/__/firebase/init.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+
+  <!-- CUSTOM -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body class="splasher">
+  <!-- Nav bar -->
+  <nav class="navbar navbar-expand-md fixed-top">
+    <div class="ml-auto order-0">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line" style="margin-bottom: 0;"></span>
+      </button>
+    </div>
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2 nav-fixing">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="affected-location.html">View Affected Locations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="live.html">Live Report</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="information.html">Information</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="overlay">
+    <div class="center-frame">
+      <h2 class="big-head">Covid 19</h2>
+      <p class="big-title">Monitoring Tool</p>
+      <h5 class="text-wrapper">Give's graphical report about affected local goverments and you can also get daily
+        information about covid-19</h5>
+
+      <button class="btn btn-danger btn-red" id="report-case-btn">Report a Case</button>
+      <p style="margin-top: 30px;">Email: ayodeji@ahyoxsoft.com</p>
+    </div>
+  </div>
+
+  <!-- Dialog -->
+  <div id="reportCaseDialog">
+    <div id="modal" class="vdialog" style="margin-top: 20px;">
+      <a href="javascript:void(0);"><img src="assets/img/button_cancel1.png" class="close-img" id="closeBtn" /></a>
+      <div class="md-title">Indicate Covid-19 Case</div>
+      <hr style="background: #F1F1F1" />
+      <br />
+      <div id="coded" style="color: #FFF; font-size: 15px;">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label>State</label>
+              <select class="form-control" name="state" id="state">
+                <option value="">Please Select</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label>Local Goverment</label>
+              <select class="form-control" name="lga" id="lga">
+                <option value="">Please Select</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <button class="modalbutton" id="onSubmitCase" type="submit">Submit</button>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/index.js"></script>
+</body>
+
+</html>
