@@ -99,7 +99,7 @@ function validateBVN(bvnNo, account, bankCode, firstName, lastName) {
         url: 'https://api.paystack.co/bvn/match',
         type: 'POST',
         headers: {
-            "Authorization": "Bearer " + "sk_live_d2708500985702aba3b78ba798e13059ea5fa2a7"
+            "Authorization": "Bearer " + "{Secrete_key}}"
         },
         data: { account_number: account, bank_code: bankCode, bvn: bvn, first_name: firstName, last_name: lastName },
 
