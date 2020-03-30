@@ -197,7 +197,8 @@ html, body {
 	font-family: 'Fauna One', serif;
 	position: fixed;
 	border: 5px solid rgb(255, 255, 255);
-	margin-left:-250px;
+    margin-left:-250px;
+    overflow: auto;
 	/*position:fixed;*/
 }
 
@@ -286,6 +287,50 @@ html, body {
     height: 100%;
 }
 
+.full-width {
+    width: 100%;
+    float: left;
+}
+
+#helpDialog {
+    display: none;
+}
+
+#help-info-frame {
+    display: none;
+}
+
+strong {
+    font-family: 'AvertaBold', sans-serif !important;
+}
+
+.markAsPaid {
+    font-size: 12px;
+    background: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    float: right;
+}
+
+.multiline3 {
+    width:100%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-align: justify;
+}
+
+#onSubmitHelp {
+    display: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+}
 
 @media only screen and (max-width: 350px) {
 	.big-head {
